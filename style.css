@@ -1,0 +1,114 @@
+body {
+  color: #fff;
+  font-family: monospace;
+  font-size: 18pt;
+  margin: 0px;
+  text-align: center;
+}
+
+div {
+  display: block;
+}
+
+section {
+  position: relative;
+  text-align: center;
+  font-size: 12pt;
+  line-height: 18pt;
+  height: calc(100vh + 53px);
+  padding: 0 10px;
+}
+
+.overflow {
+  overflow-x: hidden;
+}
+
+.flex {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Main banner */
+
+.background {
+  background-color: #252934;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  z-index: -1;
+}
+
+.btn {
+  background-color: transparent;
+  border: 2px solid #fff;
+  box-sizing: inherit;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 13pt;
+  padding: 10px 20px;
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  background-color: #04c2c9;
+  border-color: #04c2c9;
+}
+
+.red-mark {
+  color: #e31b6d;
+}
+
+/* Navigation */
+
+nav {
+  font-size: 12pt;
+  line-height: 18pt;
+  color: #fff;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  background: #1b242f;
+  border-bottom: 3px solid #04c2c9;
+  height: 50px;
+  text-align: left;
+  width: 100%;
+  z-index: 99;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+nav .link-list {
+  max-width: 1200px;
+  top: 53px;
+  transition: height 0.3s ease-out;
+  width: 100%;
+  background: none;
+  height: initial;
+  overflow: visible;
+  position: initial;
+  text-align: left;
+}
+
+.link-list .link {
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: color 0.5s;
+  display: inline;
+  margin: 0 20px;
+}
+
+.link a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.link a:hover {
+  color: #e31b6d;
+}
